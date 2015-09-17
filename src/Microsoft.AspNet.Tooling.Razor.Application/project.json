@@ -1,0 +1,19 @@
+﻿{
+  "version": "1.0.0-*",
+  "dependencies": {
+    "Microsoft.AspNet.Tooling.Razor": "1.0.0-*"
+  },
+
+  "commands": {
+    "Microsoft.AspNet.Tooling.Razor.Application": "Microsoft.AspNet.Tooling.Razor.Application"
+  },
+
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": {
+      "dependencies": {
+        "System.Console": "4.0.0-beta-*"
+      }
+    }
+  }
+}
