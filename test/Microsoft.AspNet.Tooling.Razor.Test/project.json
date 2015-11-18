@@ -1,18 +1,18 @@
 {
   "dependencies": {
-    "Microsoft.AspNet.Tooling.Razor": "1.0.0-*",
+    "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
     "Microsoft.AspNet.Razor.Test.Sources": {
-      "version": "4.0.0-*",
+      "version": "4.0.0-rc1-final",
       "type": "build"
     },
     "Microsoft.Extensions.HashCodeCombiner.Sources": {
-      "version": "1.0.0-*",
+      "version": "1.0.0-rc1-final",
       "type": "build"
     },
-    "xunit.runner.aspnet": "2.0.0-aspnet-*"
+    "xunit.runner.aspnet": "2.0.0-aspnet-rc1-final"
   },
   "frameworks": {
-    "dnx451": { }
+    "dnx451": {}
   },
   "commands": {
     "test": "xunit.runner.aspnet"

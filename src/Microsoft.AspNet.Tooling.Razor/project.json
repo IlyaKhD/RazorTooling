@@ -1,21 +1,21 @@
 {
-  "version": "1.0.0-*",
+  "version": "1.0.0-rc1-final",
   "compilationOptions": {
     "warningsAsErrors": true,
     "keyFile": "../../tools/Key.snk"
   },
   "dependencies": {
-    "Microsoft.AspNet.Razor.Runtime": "4.0.0-*",
+    "Microsoft.AspNet.Razor.Runtime": "4.0.0-rc1-final",
     "Microsoft.Dnx.DesignTimeHost.Abstractions": {
-      "version": "1.0.0-*",
+      "version": "1.0.0-rc1-final",
       "type": "build"
     },
     "Microsoft.Extensions.PlatformAbstractions": {
-      "version": "1.0.0-*",
+      "version": "1.0.0-rc1-final",
       "type": "build"
     },
     "Microsoft.Extensions.CommandLineUtils.Sources": {
-      "version": "1.0.0-*",
+      "version": "1.0.0-rc1-final",
       "type": "build"
     },
     "Newtonsoft.Json": "6.0.6"
@@ -26,8 +26,8 @@
     },
     "dotnet5.4": {
       "dependencies": {
-        "System.Runtime": "4.0.21-beta-*",
-        "System.Console": "4.0.0-beta-*"
+        "System.Runtime": "4.0.21-beta-23516",
+        "System.Console": "4.0.0-beta-23516"
       }
     }
   },
