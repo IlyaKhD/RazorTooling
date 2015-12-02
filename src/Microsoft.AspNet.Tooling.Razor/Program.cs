@@ -21,6 +21,9 @@ namespace Microsoft.AspNet.Tooling.Razor
         {
             try
             {
+                Console.WriteLine($"Processing..");
+                var stopwatch = System.Diagnostics.Stopwatch.StartNew();
+
                 var app = new CommandLineApplication
                 {
                     Name = "razor-tooling",
@@ -39,7 +42,13 @@ namespace Microsoft.AspNet.Tooling.Razor
                     return 2;
                 });
 
-                return app.Execute(args);
+                var result = app.Execute(args);
+
+                stopwatch.Stop();
+                Console.WriteLine();
+                Console.WriteLine($"Elaspsed: {stopwatch.Elapsed.ToString(@"mm\:ss\.fff")}");
+
+                return result;
             }
             catch (Exception ex)
             {
