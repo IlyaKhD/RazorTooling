@@ -22,6 +22,11 @@ namespace Microsoft.AspNet.Tooling.Razor
         {
             var assembly = _assemblyLoadContext.Load(assemblyName.FullName);
 
+#if !DOTNET5_4
+            System.Console.WriteLine();
+            System.Console.WriteLine($"Assebmly.CodeBase: {assembly.CodeBase}");
+            System.Console.WriteLine();
+#endif
             return assembly.ExportedTypes.Select(type => type.GetTypeInfo());
         }
     }
